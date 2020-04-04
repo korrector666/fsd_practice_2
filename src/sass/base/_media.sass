@@ -1,0 +1,281 @@
+@media ( max-width: 1200px )
+	.menu
+		&_link
+			font-size: 13px
+	.subheader 
+		p
+			font-size: 11px
+		&_tel
+			font-size: 17px
+	.two
+		h1
+			font-size: 55px
+		h2
+			font-size: 33px
+	.start_work
+		.text_block
+			width: 296px
+		.round_item
+			margin-right: 10px
+	.mobile_item
+		width: 100%
+		&_item
+			&_text
+				font-size: 22px
+
+@media ( max-width: 991px )
+	.menu_item
+		padding-right: 10px
+	.menu
+		padding: 10px 0px
+	.subheader
+		img
+			width: 100%
+		&_official
+			font-size: 11px
+		&_btn
+			width: 123px
+			font-size: 12px
+			height: 35px
+	.two
+		h1
+		   font-size: 45px
+		h2
+			font-size: 28px
+	.title
+		font-size: 30px
+	.start_work
+		.text_block
+			width: 296px
+			margin-top: 20px
+		.round_item
+			margin-right: 10px
+	.mobile_item
+		width: 90%
+		&_item
+			&_text
+				font-size: 16px
+	.choise_car
+		min-height: 800px
+		img 
+			width: 100%
+	.possibility
+		.main_block
+			padding-right: 0
+	footer
+		.social_block
+			flex-wrap: wrap
+			width: 84px
+			&_item
+				margin-top: 10px
+		.system_block
+			flex-direction: column
+			&_item
+				margin-top: 10px
+
+@media ( max-width: 767px )
+	.sm-hidden
+		display: none					
+	.sm-visible
+		display: block
+	.two
+		h1
+			font-size: 33px
+	.title
+		font-size: 25px
+		margin-top: 15px
+	.start_work
+		padding-top: 22px
+		.item_block
+			margin-top: 22px
+
+	.subheader
+		padding-top: 0
+		&_btn
+			align-items: center
+			display: block
+			margin: 0 auto
+			width: 132px
+			height: 39px
+		&_tel
+			text-align: center
+			margin: 0 auto
+			margin-top: 10px
+		img
+			margin-top: 22px
+
+	.choise_car
+		min-height: 690px
+		&_bg
+			height: 318px
+
+	.menu
+		width: 50%
+		position: fixed;
+		height: 100vh
+		flex-direction: column
+		background-color: rgba(0,0, 0, 0.8)
+		top: 0
+		left: -100%
+		justify-content: flex-start
+		align-items: center
+		transition: 0.5s all
+		li
+			margin-top: 10%
+			a
+				font-size: 22px
+				text-align: left
+		&_active
+			left: 0
+
+	.hamburger
+		display: block
+		position: absolute
+		padding-right: 20px
+		top: 50%
+		transform: translateY(-50%)
+		right: 0
+		span
+			display: block
+			width: 20px
+			height: 1px
+			margin-bottom: 3px
+			background-color: $color_wh 
+			transition: 0.4s all
+		&_active
+			span
+				&:nth-child(1)
+					transform: rotate(-45deg) translateY(3px)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg) translateY(-2px)
+	footer
+		min-height: 245px
+		align-items: start
+		.social_block
+			bottom: 64px
+			width: 100%
+			left: 0
+			justify-content: center
+		.system_block
+			bottom: 20px
+			flex-direction: row
+			width: 100%
+			left: 0
+			justify-content: center
+		.main_links
+			margin-top: 22px
+		.second_links
+			flex-wrap: wrap
+			
+
+			
+				
+@media ( max-width: 575px )	
+	.subheader
+		height: 60px
+		&_tel
+			font-size: 12px;
+		&_btn
+			width: 110px
+			height: 22px
+			font-size: 10px
+		&_official
+			display: none
+		img
+			margin-top: 22px
+			height: 15px
+			width: 130px
+	.two
+		min-height: 340px
+		padding: 146px 0px 35px 0px
+		h1
+			line-height: 43px
+			font-size: 30px
+		h2
+			font-size: 20px
+		.promo_text
+			display: none
+	
+	.start_work
+		padding: 22px 0px
+		.text_block
+			&_subheader
+				font-size: 16px
+	.title 
+		margin-block-start: 0;
+		margin-block-end: 0;
+		font-size: 16px
+		margin: 0 -10px
+		margin-top: 15px
+	.menu
+		width: 80%
+	.subtitle 
+		font-size: 14px
+		line-height: 21px
+
+	.mobile
+		background: none
+		padding-top: 32px
+		padding-bottom: 13px 
+		&_item
+			margin: 0 auto
+			margin-bottom: 30px
+			width: 290px
+			height: 254px
+			padding: 0 47px
+			
+			&_text
+				font-size: 18px
+				padding-top: 81px
+			&_round
+				bottom: 22px
+	.choise_car
+		min-height: 390px
+		background: none
+		background-color: $color_bl
+		&_bg
+			height: 100%
+			padding-top: 25px
+			.car_bg
+				margin-top: 35px
+			.undersubtitle
+				color: $color_wh
+				margin-top: 23px
+	.possibility
+		padding: 0
+		padding-top: 25px
+		.main_block
+			margin-top: 22px
+		&_subtitle
+			font-size: 16px
+		ul
+			padding-left: 30px
+			padding-right: 0
+			li
+				font-size: 14px
+				line-height: 16px
+				margin-top: 15px
+				&::before
+					top: 0px
+		&_undertitle
+			font-size: 14px
+			line-height: 16px
+			margin-top: 4px
+	.cities
+		padding-top: 25px
+		height: 360px
+	
+		&_link
+			margin-top: 216px
+	footer
+		.rectange_blue
+			width: 253px
+		.footer_link		
+			font-size: 14px
+		.second_links
+			padding: 0 23px
+
+			
+
