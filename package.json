@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/korrector666/beonmax-study#readme",
   "devDependencies": {
+    "kind-of": ">=6.0.3",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
