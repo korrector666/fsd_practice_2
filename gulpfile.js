@@ -7,6 +7,10 @@ const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
 const image = require('gulp-image');
 
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
+
 gulp.task('server', function() {
 
     browserSync({
@@ -57,8 +61,10 @@ gulp.task('fonts', function() {
   });
 
 gulp.task('js', function() {
-    return gulp.src('src/js/**/*')
-      .pipe(gulp.dest('dist/js'));
+    return gulp.src('./src/js/script.js')
+      .pipe(webpackStream(webpackConfig), webpack)
+      .pipe(gulp.dest('./dist/js'));    
+
   });
 
 gulp.task('mailer', function() {
