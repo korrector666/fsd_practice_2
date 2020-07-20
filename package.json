@@ -40,6 +40,6 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "kind-of": ">=6.0.3"}
 }
